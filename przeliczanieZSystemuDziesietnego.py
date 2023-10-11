@@ -23,21 +23,8 @@ def convert_number(number: int, system: int):
             break
 
         mod = number % system
-        if mod >= 10:
-            if mod == 10:
-                result.append("A")
-            if mod == 11:
-                result.append("B")
-            if mod == 12:
-                result.append("C")
-            if mod == 13:
-                result.append("D")
-            if mod == 14:
-                result.append("E")
-            if mod == 15:
-                result.append("F")
-        else:
-            result.append(str(mod))
+
+        result.append(str(mod))
 
         number = int(number / system)
 
@@ -51,4 +38,4 @@ def convert_number(number: int, system: int):
     print("Liczba w systemie (", system, "):", correct_result)
 
 
-convert_number(10, 5)
+convert_number(10, 4)
